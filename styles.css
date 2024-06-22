@@ -1,0 +1,108 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Change color of background and text */
+body {
+  background-color: grey;
+  color: black;
+}
+/* change color of header background */
+header {
+  background-color: black;
+}
+/* make the nav bard responsive */
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  padding: 20px;
+  font-size: 20px;
+}
+/* add hover for linkks */
+a:hover {
+  text-decoration: underline;
+}
+/* adding padding to skills and project section */
+#skills-section,
+#projects-section,
+#contacts-section {
+  padding-top: 50px;
+  text-align: center;
+}
+/* changing color of nav items, adding margin for space, removing bullet points */
+.about-me-nav,
+.skills-nav,
+.projects-nav,
+.contacts-nav {
+  color: white;
+  margin-right: 20px;
+  list-style-type: none;
+}
+/* removing underline from links */
+a {
+  text-decoration: none;
+}
+/* moving the about me section down the page */
+#about-me-section {
+  padding-top: 100px;
+  text-align: center;
+}
+/* adding padding to about me heading */
+.about-me-heading {
+  padding-top: 50px;
+}
+/* shrinking size of about me img and making it circular */
+.img-about-me {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+/* adding logo iages for skills */
+.html-logo,
+.css-logo,
+.bootstrap-logo,
+.git-logo {
+  width: 150px;
+  height: 150px;
+  padding-top: 50px;
+  padding-right: 20px;
+  margin: auto;
+}
+
+/* aligning skills header */
+.skills-header {
+  text-align: center;
+}
+
+/* using flex on image container  */
+#skills-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* styling card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  word-wrap: break-word;
+  align-items: flex-end;
+}
+/* styling card */
+.card {
+  object-fit: contain;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+/* adding a media query */
+@media screen and (min-device-width: 375px) {
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}
